@@ -1,18 +1,30 @@
 /////// Gráfico 01
 
+// Guardar o elemento 'select' do HTMl na variável 'yearSelector'
 let yearSelector = document.querySelector( 'select.ano-options' )
 
+// Guardar a barra verde, que equivale a quantidade de pessoas em segurança alimentar
 let barraVerde = document.querySelector("[data-categoria='verde']")
+
+// Guardar a barra amarela que equivale a quantidade de pessoas em insegurança alimentar leve
 let barraAmarelo = document.querySelector("[data-categoria='amarelo']")
+
+// Guardar a barra laranja que equivale a quantidade de pessoas em insegurança alimentar moderada
 let barraLaranja = document.querySelector("[data-categoria='laranja']")
+
+// Guardar a barra vermelha que equivale a quantidade de pessoas em insegurança alimentar grave
 let barraVermelho = document.querySelector("[data-categoria='vermelho']")
 
+// Fazendo com que a variável 'yearSelector' ouça o evento 'Change' e exerça a função 'chooseYear'
 yearSelector.addEventListener( 'change', chooseYear )
 
+// Descrição da função 'chooseYear'
 function chooseYear() {
-
+    
+    // Abrigar o value do elemento na variável
     let year = yearSelector.value
 
+    // Se o value do elemento for 2004, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2004') {
         
         barraVerde.style.width = '64.7%'
@@ -29,6 +41,7 @@ function chooseYear() {
         
     }
 
+    // Se o value do elemento for 2004, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2009') {
         
         barraVerde.style.width = '69.6%'
@@ -45,6 +58,7 @@ function chooseYear() {
         
     }
 
+    // Se o value do elemento for 2013, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2013') {
         
         barraVerde.style.width = '77.1%'
@@ -61,6 +75,7 @@ function chooseYear() {
 
     }
 
+    // Se o value do elemento for 2018, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2018') {
         
         barraVerde.style.width = '63.4%'
@@ -77,6 +92,7 @@ function chooseYear() {
 
     }
 
+    // Se o value do elemento for 2020, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2020') {
         
         barraVerde.style.width = '44.8%'
@@ -92,7 +108,8 @@ function chooseYear() {
         barraVermelho.textContent = '9%'
 
     }
-
+    
+    // Se o value do elemento for 2021/2022, a largura e a porcentagem da barra devem mudar de acordo com esses critérios.
     if (year == '2021/2022') {
         
         barraVerde.style.width = '41.3%'
@@ -111,8 +128,7 @@ function chooseYear() {
     
 }
 
-// Gráfico 02
-
+/////// Gráfico 02
 
 // Mapa das regiões
 
