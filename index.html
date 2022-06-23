@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fome no Brasil</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+</head>
+<body>
+    
+    <h1>Hoje, no Brasil, 33.1 milhões de brasileiros não tem o que comer.</h1>
+
+    <h3>Mais da metade da população – 125,2 milhões de pessoas – vive com algum grau de insegurança alimentar.</h3>
+
+    <h6>
+        <a href="https://olheparaafome.com.br/"><strong>Fonte:</strong> Relatório-II-VIGISAN-2022 apud Olhe para a Fome</a>
+    </h6>
+
+    <div class="linha"></div>
+
+    <p class="texto-01"><strong>Insegurança alimentar</strong> é a condição de não ter acesso pleno e permanente a alimentos. A mesma pode ser classificada em <strong>três níveis:</strong></p>
+
+    <div id="niveis-IA">
+
+        <div class="barra-leve">
+
+            <div class="barra"></div>
+            <div class="rotulo">Leve</div>
+            <div class="texto">Incerteza quanto ao acesso a alimentos em um futuro próximo e/ou quando a qualidade da alimentação já está comprometida.</div>
+
+        </div>
+
+        <div class="barra-moderada">
+
+            <div class="barra"></div>
+            <div class="rotulo">Moderada</div>
+            <div class="texto">Quantidade insuficiente de alimentos.</div>
+
+        </div>
+
+        <div class="barra-grave">
+
+            <div class="barra"></div>
+            <div class="rotulo">Grave</div>
+            <div class="texto">Privação no consumo de alimentos e fome.</div>
+
+        </div>
+        
+    </div>
+
+    <p class="texto-02">O Brasil ocupa um lugar de extrema relevância no <strong>mercado global de alimentos, estando entre os maiores exportadores</strong>. Esse fato adiciona mais uma camada de indignação ao número estarrecedor de pessoas em estado de insegurança alimentar hoje no país.
+
+    <br>
+    <br>
+        
+    Além disso, recentemente, foi observado o desmonte do Alimenta Brasil – antigo Programa de Aquisição de Alimentos. Em 2012, foram aplicados <strong>586 milhões de reais no programa</strong>. Em 2021, o orçamento ficou em apenas <strong>58,9 milhões de reais</strong>. Além do corte significativo, <strong>o governo gastou apenas 89 mil reais até maio desse ano (2022).</strong></p>
+
+    <h6>
+        <a href="https://www.cartacapital.com.br/politica/governo-bolsonaro-destroi-programa-alimentar-mesmo-com-avanco-da-fome-diz-site/"><strong>Fonte:</strong> Carta Capital, 06/06/2022</a>
+    </h6>
+
+    <div class="linha"></div>
+
+    <div class="grafico-01">
+
+        <h2>Observe no gráfico a seguir a progressão da situação alimentar no Brasil desde 2004.</h2>
+
+        <div class="grafico-01-estrutura">
+
+            <select class="ano-options">
+                <option value="2004">2004</option>
+                <option value="2009">2009</option>
+                <option value="2013">2013</option>
+                <option value="2018">2018</option>
+                <option value="2020">2020</option>
+                <option value="2021/2022">2021/2022</option>
+            </select>
+            
+            <div class="barras">
+                <div data-categoria="verde">64.7%</div>
+                <div data-categoria="amarelo">13.8%</div>
+                <div data-categoria="laranja">12%</div>
+                <div data-categoria="vermelho">9.5%</div>
+            </div>
+
+        </div>
+
+        <div class="legenda">
+
+            <div class="verde">
+                <div class="cor-verde"></div>
+                <div class="label">Segurança Alimentar</div>
+            </div>
+
+            <div class="amarelo">
+                <div class="cor-amarelo"></div>
+                <div>Insegurança Alimentar Leve</div>
+            </div>
+
+            <div class="laranja">
+                <div class="cor-laranja"></div>
+                <div>Insegurança Alimentar Moderada</div>
+            </div>
+
+            <div class="vermelho">
+                <div class="cor-vermelho"></div>
+                <div>Insegurança Alimentar Grave</div>
+            </div>
+
+        </div>
+
+        <h6>
+            <a href="https://olheparaafome.com.br/">Fonte: Relatório-II-VIGISAN-2022 apud Olhe para a Fome</a>
+        </h6>
+
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="grafico-02">
+
+        <p class="texto-03">Em média, considerando todas as regiões, <strong>3 em cada 10 famílias</strong> relataram <strong>incerteza quanto ao acesso a alimentos</strong> em um futuro próximo e preocupação em relação à qualidade da alimentação.
+        
+        <br>
+        <br>
+
+        No entanto, os números da insegurança alimentar apresentam <strong>diferenças importantes de uma região para a outra.</strong></p>
+
+        <h2>A geografia da fome</h2>
+
+        <select class="regiao">
+
+            <option value="selecionar">Selecione uma das regiões</option>
+
+            <option value="norte-e-nordeste">Regiões Norte e Nordeste</option>
+
+            <option value="centro-oeste-e-sudeste">Regiões Centro-Oeste e Sudeste</option>
+
+            <option value="sul">Região Sul</option>
+
+        </select>
+
+        <div class="grafico-02-estrutura">
+
+            <img src="assets/Brasil Inteiro.svg" class="brasil-inteiro">
+
+            <img src="assets/Região Nordeste & Norte.svg" class="nordeste-e-norte">
+
+            <img src="assets/Região Centro-Oeste & Sudeste.svg" class="centro-oeste-e-sudeste">
+
+            <img src="assets/Região Sul.svg" class="sul">
+
+        </div>
+
+        <div class="grafico-02-infos">
+
+            <img src="/assets/Região Norte e Nordeste – infos.svg">
+
+            <img src="/assets/Região Centro-Oeste e Sudeste – infos.svg">
+
+            <img src="/assets/Região Sul – infos.svg">
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>

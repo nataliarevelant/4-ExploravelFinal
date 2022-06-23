@@ -1,0 +1,304 @@
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+strong {
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+body > * {
+    grid-column: 2;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    padding: 0;
+    grid-column: 2;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    line-height: 1.2em;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.grafico-01 > h2 {
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+h6 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+h6 a {
+    margin: 0;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+}
+
+.linha {
+    height: 0.5px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: grey;
+    grid-column: 2;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+p.texto-01 {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+p.texto-02 {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+#niveis-IA {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+#niveis-IA .rotulo {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    font-weight: 600;
+}
+
+#niveis-IA .texto {
+    font-size: 0.5rem;
+    line-height: 1.4em;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    max-width: 170px;
+    min-width: 80px;
+    font-weight: 400;
+}
+
+#niveis-IA > .barra-leve {
+    width: 33.33%;
+}
+
+#niveis-IA > .barra-leve > .barra {
+    background-color: #FFDB6A;
+    height: 20px;
+}
+
+#niveis-IA > .barra-moderada {
+    width: 33.33%;
+}
+
+#niveis-IA > .barra-moderada > .barra {
+    background-color: #F7A340;
+    height: 20px;
+}
+
+#niveis-IA > .barra-grave {
+    width: 33.33%;
+}
+
+#niveis-IA > .barra-grave > .barra {
+    background-color: #EC6335;
+    height: 20px;
+}
+
+.grafico-01 > .grafico-01-estrutura {
+    width: 100%;
+}
+
+.ano-options, .barras {
+    margin-top: 1rem;
+}
+
+.ano-options {
+    padding: 0.2rem;
+    border-radius: 0;
+}
+
+.barras {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.barras > * {
+    height: 25px;
+    /* Se houver mudança na largura, ele vai fazer a mudança dessa forma:*/
+    transition: width 1s ease-in-out;
+}
+
+.barras div:first-child {
+    background-color: #3BC593;
+    width: 64.7%;
+    color: #212121;
+    padding: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.barras div:nth-child(2) {
+    background-color: #FFDB6A;
+    width: 13.8%;
+    color: #212121;
+    padding: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.barras div:nth-child(3) {
+    background-color: #F7A340;
+    width: 12%;
+    color: #212121;
+    padding: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.barras div:nth-child(4) {
+    background-color: #EC6335;
+    width: 9.5%;
+    color: #212121;
+    padding: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.legenda {
+    margin-top: 1.2rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.legenda > .verde {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.legenda > .verde > .cor-verde {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #3BC593;
+    align-self: center;
+}
+
+.legenda > .amarelo {
+    display: flex;
+    gap: 5px;
+}
+
+.legenda > .amarelo > .cor-amarelo {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #FFDB6A;
+    align-self: center;
+}
+
+.legenda > .laranja {
+    display: flex;
+    gap: 5px;
+}
+
+.legenda > .laranja > .cor-laranja {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #F7A340;
+    align-self: center;
+}
+
+.legenda > .vermelho {
+    display: flex;
+    gap: 5px;
+}
+
+.legenda > .vermelho > .cor-vermelho {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #EC6335;
+    align-self: center;
+}
+
+.texto-03 {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+select.regiao {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border-radius: 0;
+}
+
+.grafico-02-estrutura {
+    position: relative;
+    background-color: #212121;
+}
+
+.grafico-02-estrutura > * {
+    width: 30rem;
+    position: absolute;
+    left: -2rem;
+    display: none;
+}
+
+img.brasil-inteiro {
+    display: initial;
+}
+
+.grafico-02-infos {
+    position: relative;
+}
+
+.grafico-02-infos > * {
+    position: absolute;
+    top: 10rem;
+    left: 22rem;
+    width: 20rem;
+    display: none;
+}
+
+.appear {
+    display: initial;
+}
